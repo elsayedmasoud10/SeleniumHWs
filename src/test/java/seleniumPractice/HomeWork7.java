@@ -69,7 +69,15 @@ public class HomeWork7 {
 
         }else {
             System.out.println("is not Enable it is Disable  ");
+
+
         }
+
+        //        find the text box and clear it
+        WebElement textBox = driver.findElement(By.xpath("//input[@id='inputField']"));
+//        clear the text box
+        textBox.clear();
+        textBox.sendKeys("here is the custom text entered");
 
 
 
